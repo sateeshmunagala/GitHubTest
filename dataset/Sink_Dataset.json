@@ -1,0 +1,21 @@
+{
+	"name": "Sink_Dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_blob_storage_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "staged"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
