@@ -1,0 +1,50 @@
+{
+	"name": "git_intrgation_pl",
+	"properties": {
+		"description": "This is to test git integration",
+		"activities": [
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(pipeline().globalParameters.environment,'dev')",
+						"type": "Expression"
+					},
+					"ifFalseActivities": [
+						{
+							"name": "Fail_If_Not_Dev_Environment",
+							"description": "This pipe line run fails if the environment is  not dev. This code is meant for DEV onlu",
+							"type": "Fail",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"message": {
+									"value": "@concat('You can not run this pipeline on this environment: ',pipeline().globalParameters.environment,' You can run this pipeline in DEV environment only')",
+									"type": "Expression"
+								},
+								"errorCode": "404"
+							}
+						}
+					],
+					"ifTrueActivities": [
+						{
+							"name": "Wait_If_Dev_Environment",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 2
+							}
+						}
+					]
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-05-13T10:27:00Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "myadf2050",
+	"properties": {
+		"globalParameters": {
+			"environment": {
+				"type": "string",
+				"value": "prod"
+			}
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bf2b0b22-bebe-483b-9c70-e2c9b654ce0b",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "ir-azure-adf-automation",
+	"properties": {
+		"type": "Managed",
+		"description": "ir-azure-adf-automation",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central India",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLive": 5,
+					"cleanup": true,
+					"customProperties": []
+				}
+			}
+		}
+	}
+}
