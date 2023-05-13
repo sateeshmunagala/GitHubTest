@@ -35,10 +35,10 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"modifiedDatetimeStart": "2023-05-13T00:00:00.000Z",
+							"recursive": false,
+							"modifiedDatetimeStart": "2023-05-01T00:00:00.000Z",
 							"modifiedDatetimeEnd": "2023-05-13T00:00:00.000Z",
-							"wildcardFileName": "*.txt",
+							"wildcardFileName": "*.*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
