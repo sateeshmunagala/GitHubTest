@@ -38,7 +38,7 @@
 							"recursive": true,
 							"modifiedDatetimeStart": "2023-05-13T00:00:00.000Z",
 							"modifiedDatetimeEnd": "2023-05-13T00:00:00.000Z",
-							"wildcardFileName": "*.*",
+							"wildcardFileName": "*.txt",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
